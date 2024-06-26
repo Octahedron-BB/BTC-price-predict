@@ -77,8 +77,10 @@ LSTM模型已导出至[这里](https://github.com/Octahedron-BB/BTC-price-predic
 
 需要给予至少30天的Close、Open、High、Low、volume数据(BTC_30D.csv)
 
-- [ ] TODO1:更改模型参数寻找更优模型
-- [ ] TODO2:结合其他模型(CNN?)进行模型优化
-- [ ] TODO3:引入api或使用爬虫获取每日BTC价格,每日更新BTC_30D.csv以进行预测
-- [ ] TODO4:滞后性问题?
+- [ ] TODO1:更改模型参数寻找更优模型:调整LSTM单元数量,增加层数,加入Dropout层,尝试不同的批量大小和训练次数,尝试不同的学习率
+- [ ] TODO2:加入更多的特征，如技术指标（MA, RSI, MACD等）、交易量、市场情绪（例如推文情绪得分）等
+- [ ] TODO3:使用交叉验证来评估模型性能,使用均方根误差（RMSE）、平均绝对误差（MAE）等指标来评估模型
+- [ ] TODO4:结合其他模型(LSTM、GRU、ARIMA等)进行模型优化
+- [ ] TODO5:引入api或使用爬虫获取每日BTC价格,每日更新BTC_30D.csv以进行预测
+- [ ] TODO6:滞后性问题?
 
