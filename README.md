@@ -107,7 +107,9 @@ LSTM模型已导出至[这里](https://github.com/Octahedron-BB/BTC-price-predic
 
 接下来考虑使用爬虫获取每日BTC价格进行最新预测
 
+预测方法放在了[这里](https://github.com/Octahedron-BB/BTC-price-predict/blob/main/BTC%20predict/BTC_price_predict/BTC_price_all.ipynb)
 
+结果数据输出为csv放在了[这里](https://github.com/Octahedron-BB/BTC-price-predict/blob/main/BTC%20predict/BTC_price_predict/BTC_predict_allprice.csv)
 
 
 -----------------------------TODO LIST-----------------------------
