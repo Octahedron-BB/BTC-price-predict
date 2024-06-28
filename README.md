@@ -105,11 +105,27 @@ LSTM模型已导出至[这里](https://github.com/Octahedron-BB/BTC-price-predic
 
 算是可以接受,但目前仍存在的问题是预测得到的high,low价格间相差较大,可能导致实际应用价值不高
 
-接下来考虑使用爬虫获取每日BTC价格进行最新预测
-
 预测方法放在了[这里](https://github.com/Octahedron-BB/BTC-price-predict/blob/main/BTC%20predict/BTC_price_predict/BTC_price_all.ipynb)
 
 结果数据输出为csv放在了[这里](https://github.com/Octahedron-BB/BTC-price-predict/blob/main/BTC%20predict/BTC_price_predict/BTC_predict_allprice.csv)
+
+
+-------------------------------------------------------------------
+
+使用cryptocompare进行了每日BTC价格的获取[BTC predict/BTC_price/fetch_btc_data.py](https://github.com/Octahedron-BB/BTC-price-predict/blob/main/BTC%20predict/BTC_price/fetch_btc_data.py)
+(连续30天,截至昨日(包含昨日))
+
+获取到的数据存储为BTC_30D.csv
+
+之后载入模型进行预测[BTC predict/BTC_price/BTC_predict.py](https://github.com/Octahedron-BB/BTC-price-predict/blob/main/BTC%20predict/BTC_price/BTC_predict.py)
+
+模型预测后返回预测的close, open, high, low价格数据
+
+可以直接使用[BTC predict/BTC_price/get_predict.py](https://github.com/Octahedron-BB/BTC-price-predict/blob/main/BTC%20predict/BTC_price/get_predict.py)进行预测
+
+需要将[BTC predict/BTC_price](https://github.com/Octahedron-BB/BTC-price-predict/tree/main/BTC%20predict/BTC_price)下的文件全部下载,并将[BTC predict/BTC_price/get_predict.py](https://github.com/Octahedron-BB/BTC-price-predict/blob/main/BTC%20predict/BTC_price/get_predict.py)中的API_KEY修改为cryptocompare的API key
+
+最后得到的预测数据为今日收盘价预测会处于的价格范围
 
 
 -----------------------------TODO LIST-----------------------------
