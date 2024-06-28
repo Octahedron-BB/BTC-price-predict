@@ -14,7 +14,7 @@ tf.config.experimental.set_memory_growth(physical_devices[0], True)
 from fetch_btc_data import get_crypto_data
 from BTC_predict import get_today_price
 
-API_KEY = 'e6af47feb4029f096c712badfdeebd33daee007c737a9a77e7a55d818b5ad796'  # 替换为您的API密钥
+API_KEY = ''  # 替换为您的API密钥
 
 get_crypto_data(API_KEY)
 
