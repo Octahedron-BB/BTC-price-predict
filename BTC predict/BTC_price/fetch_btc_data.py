@@ -1,11 +1,11 @@
 import requests
 import pandas as pd
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 
 def get_crypto_data(api_key):
     # 定义时间范围
-    end_date = datetime.utcnow() - timedelta(days=1)  # 昨天
+    end_date = datetime.now(timezone.utc) - timedelta(days=1)  # 昨天
     end_date_timestamp = int(end_date.timestamp())
 
     # 定义URL
