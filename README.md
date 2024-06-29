@@ -136,6 +136,7 @@ LSTM模型已导出至[这里](https://github.com/Octahedron-BB/BTC-price-predic
 - [ ] TODO4:结合其他模型(LSTM、GRU、ARIMA等)进行模型优化
 - [x] TODO5:引入api或使用爬虫获取每日BTC价格,每日更新BTC_30D.csv以进行预测
 - [ ] TODO6:滞后性问题?
+- [ ] TODO7:30d数据预测10d？
 
 
 
